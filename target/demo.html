@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>demo</title>
+	<script type="text/javascript" src="jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="jquery.vform.min.js"></script>
+</head>
+<body>
+    <select>
+    	<option></option>
+    	<option>1</option>
+    	<option>2</option>
+    </select>
+    <input placeholder="必须勾选" type="checkbox">
+    <input placeholder="必须勾选" type="radio">
+	<input placeholder="不能大于8位数" type="text">
+	<input placeholder="不能小于11位数" type="text" id="field">
+	<input placeholder="只能输入数字" type="text">
+	<input placeholder="必须输入整数" type="text">
+	<input placeholder="输入长度必须介于5和10之间" type="text">
+	<input placeholder="必须输入正确格式的电子邮件" type="text">
+	<input placeholder="输入值必须和#field相同" type="text">
+	<input placeholder="必输字段" type="text">
+	<button id="submit">提交</button>
+	<script type="text/javascript">
+
+	    $('#submit').click(function(){
+
+            /*console.log($.vform('input,select').len());*/ //打印数量
+
+	        /*var oform = $.vform('input,select').is({
+		    	maxlength : 11 //最长11位字符不包括空格
+		    });*/
+
+	        /*var oform = $.vform('input,select').is({
+		    	minlength : 5 //至少包括5位以上的字符不包括空格
+		    });*/
+
+	        /*var oform = $.vform('input:eq(2)').is({
+		    	number : true //必须输入数字包括小数点
+		    });*/
+
+	        /*var oform = $.vform('input:eq(2)').is({
+		    	parseInt : true //必须输入整数
+		    });*/
+
+	        /*var oform = $.vform('input:eq(2)').is({
+		    	rangelength : [5,10] //5-10范围长度
+		    });*/
+
+	        /*var oform = $.vform('input:eq(2)').is({
+		    	email : true //邮箱格式
+		    });*/
+
+	        /*var oform = $.vform('input:eq(2)').is({
+		    	phone : true //手机格式
+		    });*/    
+
+	        /*var oform = $.vform('input:eq(2)').is({
+		    	equalTo : '#field' //输入值必须和#field相同
+		    });*/
+
+	        /*var oform = $.vform('input,select').is({
+		    	required : true //必输
+		    });*/
+
+	        /*var oform = $.vform('input:eq(2)').is({
+		    	en : true //必须输入字母
+		    });*/
+
+	        /*var oform = $.vform('input:eq(2)').is({
+		    	cn : true //必须输入汉字
+		    });*/
+
+	        /*var oform = $.vform('input:eq(2)').is({
+		    	not : ['abc','123','草泥马'] //屏蔽关键字
+		    });*/
+
+            /*console.log(oform);
+
+	    	if(oform === true){
+	    		alert('提交成功');
+	    	}else{
+	    		alert('不合法');
+	    	}*/
+
+	    });
+
+	</script>
+</body>
+</html>
