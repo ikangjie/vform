@@ -1,8 +1,8 @@
 /*===========================
 *name->jquery.vform.js
 *description->基于jQuery框架编写的表单验证
-*author->https://github.com/ikangjie/
-*update->190312
+*author->https://github.com/ITBOYS-hope/
+*update->20170508
 ===========================*/
 "use strict";
 (function($){
