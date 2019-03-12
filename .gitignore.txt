@@ -6,4 +6,4 @@ target
 ##############################
 ## Netbeans conf            ##
 ##############################
-jquery.vform2
+jquery.vform2.js
